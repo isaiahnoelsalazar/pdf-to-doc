@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=7">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#4088C7">
+        <meta name="msapplication-TileColor" content="#4088C7">
+        <title>PDF to DOC</title>
+        <link rel="stylesheet" href="colors.css">
+        <link rel="stylesheet" href="fonts.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Convert PDF to DOC</h1>
+            <form method="post" action="https://sasasaia.pythonanywhere.com/pdf2doc" enctype="multipart/form-data">
+                <label for="file-upload" class="custom-file-upload">
+                    Choose PDF File
+                </label>
+                <input id="file-upload" type="file" name="file" accept=".pdf" onchange="updateLabel(this)">
+                <button type="submit">Convert and Download</button>
+            </form>
+        </div>
+    </body>
+    <script src="index.js"></script>
+</html>
